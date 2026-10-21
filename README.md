@@ -36,7 +36,7 @@ The analysis addresses the following questions:
 
 ## Methodology
 
-### 1. Analytical Solution — MATLAB
+### 1. Analytical Solution (MATLAB)
 
 Derived the analytical temperature distribution using the governing spherical heat conduction equation and the appropriate boundary conditions.
 
@@ -55,13 +55,13 @@ where:
 
 The solution was obtained using zero heat flux at the sphere's center and the specified thermal boundary condition at the outer surface.
 
-### 2. Three-Dimensional Thermal FEA — ANSYS Mechanical
+### 2. Three-Dimensional Thermal FEA (ANSYS Mechanical)
 
 Created a one-eighth solid model of the sphere to reduce computational requirements while preserving the thermal behavior of the full sphere.
 
 Applied the material properties, internal heat generation, symmetry boundary conditions, and outer-surface thermal boundary condition. Extracted the temperature distribution along a radial path from the center to the outer surface.
 
-### 3. One-Dimensional Finite Element Model — MATLAB
+### 3. One-Dimensional Finite Element Model (MATLAB)
 
 Implemented an independent one-dimensional heat conduction finite element model using five two-node elements.
 
@@ -95,13 +95,13 @@ The results show a temperature decrease from the center toward the outer surface
 <!-- Replace with the path to your actual ANSYS contour image. -->
 ![ANSYS temperature contour of the one-eighth sphere](Results/temperature_contour.png)
 
-## Aerospace Engineering Relevance
+## Disclaimer
 
-Although this model represents a simplified heated sphere rather than a complete atmospheric re-entry vehicle, it demonstrates thermal analysis techniques relevant to aerospace engineering.
+Although this model represents a simplified heated sphere rather than a complete atmospheric re-entry vehicle, it demonstrates thermal analysis techniques relevant to analyzing such a problem.
 
 Understanding internal heat conduction, surface heat transfer, temperature gradients, and numerical model validation is important when evaluating thermal loads in aerospace structures and thermal protection systems.
 
-The model does not directly simulate hypersonic flow, aerodynamic heating, ablation, or transient re-entry conditions. Its aerospace relevance lies in the underlying thermal modeling and validation methods.
+The model does not directly simulate hypersonic flow, aerodynamic heating, ablation, or transient re-entry conditions. Its relevance lies in the underlying thermal modeling and validation methods.
 
 ## Project Files
 
@@ -109,15 +109,3 @@ The model does not directly simulate hypersonic flow, aerodynamic heating, ablat
 - `ANSYS/` — ANSYS model files and associated analysis results.
 - `Results/` — Temperature comparison plots and ANSYS contour plots.
 - `Documentation/` — Supporting derivations, assumptions, and calculations.
-
-*Folder names and file paths should be adjusted to match the contents of this repository.*
-
-## Key Skills Demonstrated
-
-- Thermal finite element analysis using ANSYS Mechanical
-- Analytical heat transfer and boundary-condition formulation
-- One-dimensional finite element implementation in MATLAB
-- Symmetry-based model reduction
-- Temperature field visualization and post-processing
-- Numerical solution verification and validation
-- Engineering interpretation of thermal gradients
